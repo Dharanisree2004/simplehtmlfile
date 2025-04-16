@@ -7,12 +7,13 @@ pipeline {
         PORT = '8081'
     }
 
-    // stages {
-    //     stage('Clone Repo') {
-    //         steps {
-    //             // git 'https://github.com/Dharanisree2004/simplehtmlfile.git'
-    //         }
-    //     }
+    stages {
+        stage('Clone Repo') {
+            steps {
+                // git 'https://github.com/Dharanisree2004/simplehtmlfile.git'
+                echo 'clonedd..'
+            }
+        }
 
         stage('Build Docker Image') {
             steps {
